@@ -1,0 +1,19 @@
+Source: golang-sloth
+Section: devel
+Priority: extra
+Maintainer: Lance Cooper <lance@struktur.de>
+Build-Depends: debhelper (>= 8),
+               dh-golang,
+               golang-go (>= 1.1),
+               golang-mux-dev
+Standards-Version: 3.9.3
+
+Package: golang-sloth-dev
+Pre-Depends: dpkg (>= 1.15.6~)
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         golang-mux-dev
+Description: The sloth REST framework for Go
+ Sloth is a micro-framework for building RESTful APIs.
+ It was forked from Sleepy to support the Gorilla web toolkit.
